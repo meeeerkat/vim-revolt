@@ -1,7 +1,7 @@
 
 ## Vim base framework
 to build simple terminal apps with vim bindings.
-This is just an example of a simple application using it.
+This is just an example of a simple application using **libvim**.
 
 ### Why include-prefixes
 This directory only contains links to the include/ of statically linked libraries because adding the include/ directory directly doesn't allow to add a prefix and this would cause naming conflicts with files in the current project that would have the same include path (path & name).
