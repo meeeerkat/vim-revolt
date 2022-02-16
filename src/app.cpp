@@ -23,10 +23,17 @@ App::~App()
 
 void App::pause()
 {
+    Vim::App::pause();
+
+    logs_widget->set_refresh_policy(false);
 }
 
 void App::unpause()
 {
+    logs_widget->set_refresh_policy(true);
+    logs_widget->refresh_display();
+
+    Vim::App::unpause();
 }
 
 Widgets::Logs *App::get_logs_widget() {
