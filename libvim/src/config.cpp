@@ -1,4 +1,4 @@
-#include "vim/config.hpp"
+#include "config.hpp"
 #include <yaml-cpp/yaml.h>
 
 namespace Vim {

@@ -1,4 +1,4 @@
-#include "vim/widgets/widget.hpp"
+#include "widgets/widget.hpp"
 
 namespace Vim::Widgets {
 

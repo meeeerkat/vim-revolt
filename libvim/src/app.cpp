@@ -1,10 +1,10 @@
-#include "vim/app.hpp"
+#include "app.hpp"
 #include <stdlib.h>
 #include <yaml-cpp/yaml.h>
-#include "vim/widgets/command.hpp"
-#include "vim/input_handler.hpp"
-#include "vim/commands/handler.hpp"
-#include "vim/config.hpp"
+#include "widgets/command.hpp"
+#include "input_handler.hpp"
+#include "commands/handler.hpp"
+#include "config.hpp"
 
 
 namespace Vim {

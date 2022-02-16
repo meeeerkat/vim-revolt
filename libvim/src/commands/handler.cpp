@@ -6,10 +6,10 @@
 #include <string.h>
 #include <glib.h>
 #include <unistd.h>
-#include "vim/app.hpp"
-#include "vim/input_handler.hpp"
-#include "vim/widgets/command.hpp"
-#include "vim/commands/handler.hpp"
+#include "app.hpp"
+#include "input_handler.hpp"
+#include "widgets/command.hpp"
+#include "commands/handler.hpp"
 
 namespace Vim::Commands {
 

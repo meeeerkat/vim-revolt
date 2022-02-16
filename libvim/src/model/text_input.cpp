@@ -1,4 +1,4 @@
-#include "vim/model/text_input.hpp"
+#include "model/text_input.hpp"
 #include <ncurses.h>
 
 

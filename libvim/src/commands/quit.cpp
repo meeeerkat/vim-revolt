@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <glib.h>
-#include "vim/commands/quit.hpp"
-#include "vim/app.hpp"
+#include "commands/quit.hpp"
+#include "app.hpp"
 
 
 

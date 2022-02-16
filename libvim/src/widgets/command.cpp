@@ -1,5 +1,5 @@
-#include "vim/widgets/command.hpp"
-#include "vim/app.hpp"
+#include "widgets/command.hpp"
+#include "app.hpp"
 
 
 namespace Vim::Widgets {

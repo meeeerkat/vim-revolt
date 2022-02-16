@@ -1,6 +1,6 @@
-#include "vim/commands/write_command.hpp"
-#include "vim/widgets/command.hpp"
-#include "vim/app.hpp"
+#include "commands/write_command.hpp"
+#include "widgets/command.hpp"
+#include "app.hpp"
 
 
 namespace Vim::Commands {

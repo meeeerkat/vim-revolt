@@ -1,4 +1,4 @@
-#include "vim/input_handler.hpp"
+#include "input_handler.hpp"
 
 
 namespace Vim {

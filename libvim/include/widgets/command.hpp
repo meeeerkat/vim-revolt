@@ -4,8 +4,8 @@
 #include <ncurses.h>
 #include <string>
 #include <vector>
-#include "vim/widgets/widget.hpp"
-#include "vim/model/text_input.hpp"
+#include "widgets/widget.hpp"
+#include "model/text_input.hpp"
 
 
 namespace Vim {
