@@ -30,6 +30,7 @@ App::~App()
     // helpers freeing
     delete input_handler;
     delete commands_handler;
+    delete config;
 
     // ncurses closing
     endwin();
