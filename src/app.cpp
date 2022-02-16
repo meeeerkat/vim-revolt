@@ -19,6 +19,9 @@ App::App()
 
 App::~App()
 {
+    delete logs_widget;
+
+    delete config;
 }
 
 void App::pause()
