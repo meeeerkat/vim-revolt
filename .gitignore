@@ -3,7 +3,7 @@ main
 *.o
 *.a
 
-libvim/
+libvim
 
 gmon.out
 vgcore*
