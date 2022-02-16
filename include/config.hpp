@@ -1,5 +1,5 @@
-#ifndef __VIM_CONFIG_H__
-#define __VIM_CONFIG_H__
+#ifndef __VIM_CONFIG_HPP__
+#define __VIM_CONFIG_HPP__
 
 #include <map>
 #include <string>
