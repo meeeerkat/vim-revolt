@@ -1,0 +1,9 @@
+
+main
+*.o
+
+gmon.out
+vgcore*
+
+logs
+logs.core.*
