@@ -20,8 +20,8 @@ class App : public Vim::App {
         virtual void pause();
         virtual void unpause();
         
-        Config *getConfig();
-        Widgets::Logs *getLogsWidget();
+        Config *get_config();
+        Widgets::Logs *get_logs_widget();
 
     private:
         // helpers

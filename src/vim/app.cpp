@@ -75,13 +75,13 @@ int App::exec(const std::string &command)
     return commands_handler->exec(command);
 }
 
-Config *App::getConfig() {
+Config *App::get_config() {
     return config;
 }
-InputHandler *App::getInputHandler() {
+InputHandler *App::get_input_handler() {
     return input_handler;
 }
-Widgets::Command *App::getCommandWidget() {
+Widgets::Command *App::get_command_widget() {
     return command_widget;
 }
 }

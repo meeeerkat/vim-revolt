@@ -11,7 +11,7 @@ namespace Commands {
             return -1;
         }
 
-        app->getLogsWidget()->print(std::string(argv[1]) + "\n");
+        app->get_logs_widget()->print(std::string(argv[1]) + "\n");
 
         return 0;
     }

@@ -29,10 +29,10 @@ class App {
         
         virtual int exec(const std::string &command);
 
-        Config *getConfig();
-        InputHandler *getInputHandler();
+        Config *get_config();
+        InputHandler *get_input_handler();
 
-        Widgets::Command *getCommandWidget();
+        Widgets::Command *get_command_widget();
 
     private:
         // helpers

@@ -8,10 +8,10 @@ namespace Vim::Commands {
     {
         if (argc == 2) {
             const std::string base_command(argv[1]);
-            app->getCommandWidget()->handle_input(app, &base_command);
+            app->get_command_widget()->handle_input(app, &base_command);
         }
         else
-            app->getCommandWidget()->handle_input(app, NULL);
+            app->get_command_widget()->handle_input(app, NULL);
 
         return 0;
     }

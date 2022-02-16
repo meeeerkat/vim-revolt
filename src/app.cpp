@@ -29,6 +29,6 @@ void App::unpause()
 {
 }
 
-Widgets::Logs *App::getLogsWidget() {
+Widgets::Logs *App::get_logs_widget() {
     return logs_widget;
 }

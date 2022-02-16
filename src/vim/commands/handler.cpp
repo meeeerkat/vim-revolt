@@ -44,7 +44,7 @@ int Handler::exec(const std::string &command) const
         // Shell command
         app->pause();
         system(command.c_str() + 1);
-        app->getInputHandler()->wait_for_input();
+        app->get_input_handler()->wait_for_input();
         app->unpause();
         g_strfreev(argv);
         return 0;
@@ -68,7 +68,7 @@ int Handler::exec(const std::string &command) const
 }
 
 void Handler::print_message(App *app, const std::string &message) const {
-    app->getCommandWidget()->print_message(message);
+    app->get_command_widget()->print_message(message);
 }
 
 }
