@@ -31,18 +31,4 @@ int Handler::_exec_command(const std::string &command_name, int argc, char **arg
     return COMMANDS.at(command_name)(app, argc, argv, error_message);
 }
 
-/*
-void Handler::set_global_variables(App *app, char **argv, int argc) const
-{
-    for (int i=0; i < argc; i++) {
-        std::string arg(argv[i]);
-        if (global_vars_getters.count(arg) > 0) {
-            const std::string replacement = global_vars_getters.at(arg)(app);
-            free(argv[i]);
-            argv[i] = strdup(replacement.c_str());
-        }
-    }
-}
-*/
-
 }

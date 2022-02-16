@@ -39,17 +39,9 @@ int Handler::exec(const std::string &command) const
         return -1;
     }
 
-    //set_global_variables(app, argv, argc);
     const std::string command_name(argv[0]);
     if (command_name[0] == '!') {
         // Shell command
-        /*
-        std::string modified_command;
-        for (int i=0; i < argc; i++) {
-            modified_command += argv[i];
-            modified_command += " ";
-        }
-        */
         app->pause();
         system(command.c_str() + 1);
         app->getInputHandler()->wait_for_input();
@@ -75,21 +67,8 @@ int Handler::exec(const std::string &command) const
     return 0;
 }
 
-/*
-void Handler::set_global_variables(App *app, char **argv, int argc) const
-{
-    for (int i=0; i < argc; i++) {
-        std::string arg(argv[i]);
-        if (global_vars_getters.count(arg) > 0) {
-            const std::string replacement = global_vars_getters.at(arg)(app);
-            free(argv[i]);
-            argv[i] = strdup(replacement.c_str());
-        }
-    }
-}
-*/
-
 void Handler::print_message(App *app, const std::string &message) const {
     app->getCommandWidget()->print_message(message);
 }
+
 }

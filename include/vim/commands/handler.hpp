@@ -3,7 +3,6 @@
 
 #include <string>
 #include <map>
-//#include "commands/global.hpp"
 
 
 namespace Vim {
@@ -35,13 +34,6 @@ namespace Commands {
                 COMMAND(write_command)
             };
 
-            /*
-            void set_global_variables(App *app, char **argv, int argc) const;
-            std::map<std::string, const std::string& (*) (App*)> global_vars_getters = 
-            {
-                { "$CURRENT_URL", Global::get_current_url },
-            };
-            */
     };
 
 }

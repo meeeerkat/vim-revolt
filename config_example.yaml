@@ -1,0 +1,9 @@
+# This is an example of config file
+# It should be copied to ~/.vim-base.yaml to be effective
+# Lack of a proper config file results in undefined behavior for now
+
+shortcuts:
+  :: write_command
+  p: write_command "print "
+  P: write_command "println "
+  q: quit
