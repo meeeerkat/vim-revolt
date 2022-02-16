@@ -23,7 +23,6 @@ namespace Commands {
             int exec(const std::string &command) const;
 
         protected:
-            virtual bool _has_command(const std::string &command_name) const;
             virtual int _exec_command(const std::string &command_name, int argc, char **argv, std::string *error_message) const;
 
         private:

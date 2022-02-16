@@ -19,13 +19,10 @@ Handler::Handler(App *_app)
 
 Handler::~Handler() {}
 
-
-bool Handler::_has_command(const std::string &command_name) const
-{
-    return COMMANDS.count(command_name) > 0;
-}
 int Handler::_exec_command(const std::string &command_name, int argc, char **argv, std::string *error_message) const
 {
+    if (COMMANDS.count(command_name) == 0)
+        return 1; // Command not found
     return COMMANDS.at(command_name)(app, argc, argv, error_message);
 }
 
@@ -61,21 +58,21 @@ int Handler::exec(const std::string &command) const
         return 0;
     }
 
-    if (_has_command(command_name)) {
-        std::string error_message;
-        if (_exec_command(command_name, argc, argv, &error_message) < 0) {
-            print_message(app, error_message);
-            g_strfreev(argv);
-            return -2;
-        }
-
+    std::string error_message;
+    int err_code = _exec_command(command_name, argc, argv, &error_message);
+    if (err_code < 0) {
+        print_message(app, error_message);
         g_strfreev(argv);
-        return 0;
+        return -2;
+    }
+    if (err_code == 1) {
+        print_message(app, "Unknown command.");
+        g_strfreev(argv);
+        return 1;
     }
 
-    print_message(app, "Unknown command.");
     g_strfreev(argv);
-    return -1;
+    return 0;
 }
 
 /*
